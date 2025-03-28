@@ -198,4 +198,7 @@ exec --no-startup-id feh --bg-fill Downloads/1387849.png
 bindsym $mod+Shift+l exec ~/.config/i3/lock.sh
 
 # compositor for opacity and blur effects (picom)
-exec --no-startup-id picom --experimental-backends --backend glx --vsync
+exec --no-startup-id picom --backend xrender --no-fading-openclose -b
+#exec --no-startup-id picom --experimental-backends --backend glx --vsync
+#exec --no-startup-id picom --experimental-backends -b
+
